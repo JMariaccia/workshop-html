@@ -6,19 +6,22 @@
     <body>
         <form action="/send" method="post">
             <label for="nom_personne">Nom</label><br>
-            <input type="text" name="prenom" id="nom_personne" required/><br>
+            <input type="text" name="prenom" id="nom_personne" required><br>
             <label for="prenom_personne">Prenom</label><br>
-            <input type="text" name="prenom" id="prenom_personne" required/><br>
+            <input type="text" name="prenom" id="prenom_personne" required><br>
             <label for="email_personne">Email</label><br>
-            <input type="email" name="prenom" id="email_personne" required/><br>
+            <input type="email" name="prenom" id="email_personne" required><br>
             <label for="tel_personne">Numero de telephone</label><br>
-            <input type="tel" name="prenom" id="tel_personne"/><br>
+            <input type="tel" name="prenom" id="tel_personne"><br>
             
             <label for="canal">Canal de contact prefere</label><br>
             <select id="canal" required>
                 <option value="email" >Email</option>
                 <option value="tel">Telephone</option>
-            </select><br>            <label for="message">Message</label><br>            <textarea id="message" name="message" rows="5" cols="50"></textarea><br>            <button type="submit">Valider</button><br>
+            </select><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
+            <button type="submit">Valider</button><br>
         </form>
         <a href="index.html">Accueil</a>
     </body>
