@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Pizzeria</title>
-</head>
-<body>
-    <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</body>
+    <head>
+        <title>Pizzeria</title>
+    </head>
+    <body>
+        <form action="action_page.php" method="post">
+            <label for="nom_personne">Nom</label>
+            <input type="text" name="prenom" id="nom_personne" required/>
+            <label for="prenom_personne">Prénom</label>
+            <input type="text" name="prenom" id="prenom_personne" required/>
+            <label for="email_personne">Email</label>
+            <input type="email" name="prenom" id="email_personne" required/>
+            <label for="tel_personne">Numéro de téléphone</label>
+            <input type="tel" name="prenom" id="tel_personne"/>
+            
+            <label for="canal">Canal de contact préféré</label>
+            <select id="canal" multiple required>
+                <option value="email" >Email</option>
+                <option value="tel">Téléphone</option>
+            </select>            <label for="message">Message</label>            <textarea id="message" name="message" rows="5" cols="50"/>            <button type="submit">Valider</button>
+        </form>
+        <a href="index.html">Accueil</a>
+    </body>
 </html>
