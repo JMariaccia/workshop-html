@@ -4,30 +4,26 @@
     <title>Pizzeria</title>
 </head>
 <body>
-    <h1>La Florentina</h1>
-    <h2>Pizzéria</h2>
+    <form action="action_page.php">
 
-    <ul>
-        <li><a href="Accueil">Accueil</a></li>
-        <li><a href="liste_pizzas.html">Nos pizzas</a></li>
-        <li><a href="Contact">Contact</a></li>
-    </ul>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <h2>A propos</h2>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <p>
-        la Florentina a ouvert ses portes en 2000
-        <br />Nous sommes une équipe de passionnés !
-        <br />L'amour des pizzas nous amène à inventer en permanance.
-        <br />Revenez souvent pour découvrir nos dernières oeuvres :-)
-    </p>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
 
-    <h2>Je suis un grand voyageur</h2>
-    <p>Bla bla (texte de l'article)</p>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <p>
-        Copyright La Florentina - Tous droits réservés
-        <br /><a href="Contact">Nous contacter</a>
-    </p>
+    <input type="submit" value="Submit">
+
+  </form>
 </body>
 </html>
