@@ -1,0 +1,37 @@
+﻿html {
+    height: 100%;
+}
+body {
+    background-image: url(Images/bkgr-pizza.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    margin :0;
+    padding:0;
+}
+
+#cassecouille {
+    margin: 0;
+}
+#blur {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.50);
+    filter: blur(5px);
+    height:100%;
+    width: 100%;
+    z-index:-1;
+
+}
+#corps {
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    background-color: pink;
+}
+#header h1, #header h2
+{
+        text-align: center;
+}
